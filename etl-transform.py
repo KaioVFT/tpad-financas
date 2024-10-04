@@ -15,4 +15,3 @@ df_t = df_t.dropna()
 print(df.head(3))
 print(df_t.head(3))
 print(df_t.info())
-
