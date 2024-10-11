@@ -3,7 +3,7 @@ from glob import glob
 from yfinance import download
 
 # 1. 30 principais ações
-file = glob(f'data/IBOVDia*.csv')[0]
+file = glob(f'C:/Users/kaiov/Documents/projetos/tpad-financas/data/IBOVDia*.csv')[0]
 print(file)
 
 tickets =(

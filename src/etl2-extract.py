@@ -3,7 +3,7 @@ from numpy import log, log1p
 from datetime import datetime, timedelta
 
 df = (
-    pd.read_csv('data/precos.csv', parse_dates=['Date'])
+    pd.read_csv('C:/Users/kaiov/Documents/projetos/tpad-financas/data/precos.csv', parse_dates=['Date'])
     .sort_values('Date')
     .set_index('Date')
     )

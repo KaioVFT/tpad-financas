@@ -8,7 +8,7 @@ print(feriados)
 
 
 d = (
-    read_csv('data/precos.csv', parse_dates=['Date'])
+    read_csv('C:/Users/kaiov/Documents/projetos/tpad-financas/data/precos.csv', parse_dates=['Date'])
     .set_index('Date')
 )
     
@@ -20,7 +20,7 @@ feriados = DataFrame(dict(data=feriados)).assign(
     data=lambda x: to_datetime(x.data)-timedelta(1), vespera=1)
 
 # Dados IBOV
-file = glob(f'data/IBOVDia*.csv')[0]
+file = glob(f'C:/Users/kaiov/Documents/projetos/tpad-financas/data/IBOVDia*.csv')[0]
 ibov = (
     read_csv(file, sep=';', encoding='ISO-8859-1', decimal=',', skiprows=1, index_col=False)
     .dropna(subset=['Tipo'])
