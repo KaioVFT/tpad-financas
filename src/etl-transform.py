@@ -7,10 +7,10 @@ df = (
     .set_index('Date')
     )
 
-# Calculo de taxa instantanea de retorno
-
+# Calculo da taxa instantanea de retorno
 df_t = log(df/df.shift(1))
-df_t = df_t.dropna()
+df_t = df_t.dropna().reset_index()
+
 
 print(df.head(3))
 print(df_t.head(3))
