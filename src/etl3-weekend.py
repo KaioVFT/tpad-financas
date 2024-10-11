@@ -49,4 +49,4 @@ d1 = (
 print(d1.head(3))
 
 # Exportando data mart para Visualização
-d1.to_excel('data/tbl_acoes.xlsx', index=False, sheet_name = 'data')
+d1.to_excel('C:/Users/kaiov/Documents/projetos/tpad-financas/data/tbl_acoes.xlsx', index=False, sheet_name = 'data')
